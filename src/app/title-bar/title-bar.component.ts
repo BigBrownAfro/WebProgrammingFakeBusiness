@@ -9,7 +9,7 @@ export class TitleBarComponent implements OnInit {
   title:String;
 
   constructor() { 
-    this.title = "My Fake Business";
+    this.title = "Citio";
   }
 
   ngOnInit() {
