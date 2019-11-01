@@ -6,7 +6,7 @@ html { /* https://bits.theorem.co/css-pro-tips-responsive-font-sizes-and-when-to
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  display: flex; /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
   align-items: center;
   background-color: rgb(75, 46, 87);
   padding: .3em;
@@ -64,6 +64,7 @@ button.search-button:hover{
 button.search-button:active{
   background-color: rgb(224, 175, 220);
 }
+
 /* everywhere else */
 
 * {
