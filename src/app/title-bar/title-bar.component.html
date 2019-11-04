@@ -4,8 +4,8 @@
             <div class="nav-bar">
                 <div class="title">{{title}}</div>
                 <div class="search-bar">
-                    <div id="left-search"></div>
-                    <input class="search-input">
+                    <div (click)="onClickLeftSearch(searchInput)" id="left-search"></div>
+                    <input class="search-input" #searchInput>
                     <button class="search-button"><img id="search-icon" src="assets/search-icon.jpg" alt="&#9740;"></button>
                 </div>
             </div>
