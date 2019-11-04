@@ -64,6 +64,10 @@ button.search-button:hover{
 button.search-button:active{
   background-color: rgb(224, 175, 220);
 }
+#search-icon{
+  width: 1em;
+  height: 1em;
+}
 
 /* everywhere else */
 
