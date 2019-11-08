@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { SidebarModule } from 'ng-sidebar';
+import { SidebarContentComponent } from './sidebar-content/sidebar-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     TitleBarComponent,
+    SidebarContentComponent,
   ],
   imports: [
     BrowserModule,
