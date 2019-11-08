@@ -1,0 +1,19 @@
+.contentContainer{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    align-items: flex-start;
+}
+
+.contentContainer > input{
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-left: .5rem; 
+    margin-top: .5rem
+} 
+
+.contentContainer > input:hover{
+    filter: brightness(1.5);
+}
