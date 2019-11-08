@@ -1,4 +1,16 @@
 <!-- https://angular.io/tutorial/toh-pt0 -->
-<app-title-bar></app-title-bar>
+<ng-sidebar-container  style="height: 100vh;"> <!-- https://www.npmjs.com/package/ng-sidebar -->
+    <ng-sidebar [(opened)]="_opened">
+        <!-- Sidebar Contents-->
+        <div  style="background-color: rgb(224, 213, 228); width: 10rem; height: 100vh;">
+            <input type="Submit" value="X" (click)="_toggleSidebar()">
+        </div>
+    </ng-sidebar>
 
-<app-heroes></app-heroes>
+    <div ng-sidebar-content>
+        <!-- Page Contents-->
+        <app-title-bar (sidebarToggledEvent)="_toggleSidebar()"></app-title-bar> <!-- https://stackoverflow.com/questions/43323272/angular-4-call-parent-method-in-a-child-component -->
+
+        <app-heroes></app-heroes>
+    </div>
+</ng-sidebar-container>

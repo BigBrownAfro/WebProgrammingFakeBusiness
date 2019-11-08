@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-title-bar',
@@ -7,10 +7,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 
 export class TitleBarComponent implements OnInit {
+  @Output() sidebarToggledEvent = new EventEmitter();
   title:String;
 
   constructor() { 
-    this.title = "Bideo Gaming";
+    this.title = "Fake Business";
   }
 
   ngOnInit() {
@@ -21,4 +22,7 @@ export class TitleBarComponent implements OnInit {
     inputElement.focus();
   }
 
+  _toggleSidebar(){
+    this.sidebarToggledEvent.next();
+  }
 }

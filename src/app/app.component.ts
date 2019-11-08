@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { TitleBarComponent } from './title-bar/title-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Citio';
+  private _opened = false;
+
+  private _toggleSidebar(){
+    this._opened = !this._opened;
+  }
 }
