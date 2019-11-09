@@ -5,7 +5,7 @@
         <app-sidebar-content (sidebarToggledEvent)="_toggleSidebar()"></app-sidebar-content>
     </ng-sidebar>
 
-    <div ng-sidebar-content id="page-content">
+    <div ng-sidebar-content #pageContent id="pageContent" style="background-color: white; height: 100vh;">
         <!-- Page Contents-->
         <app-title-bar (sidebarToggledEvent)="_toggleSidebar()"></app-title-bar> <!-- https://stackoverflow.com/questions/43323272/angular-4-call-parent-method-in-a-child-component -->
 
