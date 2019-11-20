@@ -8,7 +8,8 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class SidebarContentComponent implements OnInit {
   @Output() sidebarToggledEvent = new EventEmitter();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -16,5 +17,4 @@ export class SidebarContentComponent implements OnInit {
   _toggleSidebar(){
     this.sidebarToggledEvent.next();
   }
-
 }

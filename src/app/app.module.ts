@@ -8,6 +8,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { SidebarModule } from 'ng-sidebar';
 import { SidebarContentComponent } from './sidebar-content/sidebar-content.component';
+import { CartViewComponent } from './cart-view/cart-view.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SidebarContentComponent } from './sidebar-content/sidebar-content.compo
     HeroesComponent,
     TitleBarComponent,
     SidebarContentComponent,
+    CartViewComponent,
   ],
   imports: [
     BrowserModule,

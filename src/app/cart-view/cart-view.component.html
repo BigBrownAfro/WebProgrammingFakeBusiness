@@ -1,0 +1,12 @@
+<h1>Shopping Cart:</h1>
+<div class="list-container">
+    <ul class="cart-item-list">
+        <li *ngFor="let item of cart.items" (click)="onSelect(item)">
+            <div class="item-image-placeholder-div"></div>
+            <div class="item-text-div">
+                <div class="item-name">{{item.name}}</div>
+                <div class="item-price">{{item.price}}</div>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,4 +1,6 @@
 import { Component, ViewChildren } from '@angular/core';
+import { Cart } from './cart';
+import { ITEMS } from './mock-items';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +8,19 @@ import { Component, ViewChildren } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  //pageContent: HTMLDivElement;
-  //@ViewChildren('pageContent') pageContent: HTMLDivElement;
-  private _opened = false;
-  brightness = 1;
+  items = ITEMS;
+  private _opened:boolean;
+  cart:Cart;
+
+  constructor(){
+    this._opened = false;
+    this.cart = new Cart();
+    for (var item of this.items){
+      this.cart.add(item);
+    }
+  }
 
   private _toggleSidebar(){
-    //@ViewChildren('pageContent') pageContent: HTMLDivElement;
     const pageContent = document.getElementById("pageContent");
     this._opened = !this._opened;
     if(this._opened){
@@ -21,5 +29,10 @@ export class AppComponent {
     }else{
       pageContent.style.filter = "brightness(1)";
     }
+  }
+
+  private _goToCart(){
+    console.log("Going to cart page.");
+    
   }
 }

@@ -1,0 +1,42 @@
+h1{
+    font-size: 5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+}
+.list-container{
+    /* centering elements https://www.w3schools.com/css/css_align.asp */
+}
+.cart-item-list > li{
+    width: 50rem;
+    height: 20rem;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20rem 20rem;
+    grid-gap: .3rem;
+}
+.cart-item-list > li:first-child{
+    border-top: 1px solid black;
+}
+.item-image-placeholder-div{
+    height: 18rem;
+    width: 18rem;
+    margin: 1rem;
+    align-self: center;
+    background-color: rgb(242, 239, 243);
+    border-radius: 1rem;
+    border: 4px solid rgb(75, 46, 87);
+}
+.item-text-div{
+    background-color: rgb(249, 250, 245);
+    width: 29rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-name{
+    font-size: 2.5rem;
+}

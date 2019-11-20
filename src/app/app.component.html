@@ -7,8 +7,10 @@
 
     <div ng-sidebar-content #pageContent id="pageContent" style="background-color: white; height: 100vh;">
         <!-- Page Contents-->
-        <app-title-bar (sidebarToggledEvent)="_toggleSidebar()"></app-title-bar> <!-- https://stackoverflow.com/questions/43323272/angular-4-call-parent-method-in-a-child-component -->
+        <app-title-bar (sidebarToggledEvent)="_toggleSidebar()" (toCartEvent)="_goToCart()" [cart]="cart">
+        </app-title-bar> <!-- https://stackoverflow.com/questions/43323272/angular-4-call-parent-method-in-a-child-component -->
 
+        <app-cart-view [cart]="cart"></app-cart-view>
         <app-heroes></app-heroes>
     </div>
 </ng-sidebar-container>

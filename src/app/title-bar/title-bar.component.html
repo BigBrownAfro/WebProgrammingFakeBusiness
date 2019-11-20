@@ -9,6 +9,10 @@
                     <input class="search-input" #searchInput>
                     <button class="search-button"><img id="search-icon" src="assets/search-icon.jpg" alt="&#9740;"></button>
                 </div>
+                <div class="cart-div" (click)="_goToCart()">
+                    <div class="cart-number">{{cart.size}}</div>
+                    <input class="cart-button" type="Image" value="cart" src="assets\cart.png">
+                </div>
             </div>
     </header>
 </body>
