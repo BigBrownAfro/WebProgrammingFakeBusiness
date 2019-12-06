@@ -1,0 +1,18 @@
+{
+    "items": 
+    [
+        {"name":"Cheez-It Original Cheese Crackers", "price":3.99, "category":"Grocery", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/81psLMccGBL._SX679_.jpg"},
+        {"name":"Arrowhead Water 32", "price":4.97, "category":"Grocery", "imageURL":"https://cdn.influenster.com/media/product/image/1_PYE5Bwa.JPG.750x750_q85ss0_progressive.jpg"},
+        {"name":"Rocket League", "price":14.99, "category":"Gaming", "imageURL":"https://media.gamestop.com/i/gamestop/10129455/Rocket-League-Collectors-Edition?$pdp$"},
+        {"name":"Iams Proactive Health Adult Dry Dog Food Chicken", "price": 31.94, "category":"Dogs", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/81L-2wvXX4L._SX425_.jpg"},
+        {"name":"Magformers Vehicle Wow Set", "price": 19.99, "category":"Kids", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/71uoKbAil3L._SX425_.jpg"},
+        {"name":"Star Wars: The Mandalorian - The Child", "price": 13.99, "category":"Kids", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/51-waW%2BXydL._SL1076_.jpg"},
+        {"name":"Echo Dot (3rd Gen)", "price": 24.99, "category":"Electronics", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/6182S7MYC2L._SX569_.jpg"},
+        {"name":"Habor 022 Meat Thermometer", "price": 10.99, "category":"Electronics", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/6121oqFKFPL._SX569_.jpg"},
+        {"name":"100 Recipes to Live to 100", "price": 19.55, "category":"Books", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/51p5ZlRQH6L._SX400_BO1,204,203,200_.jpg"},
+        {"name":"Apple AirPods with Charging Case", "price": 144.01, "category":"Electronics", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/41g4Idd4y9L._SY445_.jpg"},
+        {"name":"Bose QuietComfort 35 II Wireless Bluetooth Headphones", "price": 299.97, "category":"Electronics", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/51sAtKgDkDL.jpg"},
+        {"name":"Sony a7 III Full-frame Mirrorless Interchangeable-Lens Camera", "price": 1998.01, "category":"Electronics", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/71ETsX1pjgL._SX522_.jpg"},
+        {"name":"Shumee Organic Wooden Crochet Shaker Baby Rattle", "price": 13.13, "category":"Kids", "imageURL":"https://images-na.ssl-images-amazon.com/images/I/61j9la7txhL._SX425_.jpg"}
+    ]
+}

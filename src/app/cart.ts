@@ -18,16 +18,23 @@ export class Cart{
      */
     public add(i:Item){
         let index = this.items.indexOf(i)
-        console.log(index);
 
         if(index === -1){
-            console.log('new item added');
             
-            this.size = this.items.push(i);
+            this.items.push(i);
             this.quantities.push(1);
         }else{
             this.quantities[index] += 1;
             console.log("quantity: " + this.quantities[index]);
+        }
+
+        this.calculateSize();
+    }
+
+    private calculateSize(){
+        this.size = 0;
+        for (let i = 0; i < this.quantities.length; i++) {
+            this.size += this.quantities[i];
         }
     }
 }

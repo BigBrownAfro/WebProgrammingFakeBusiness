@@ -1,0 +1,13 @@
+<img src="https://i.pinimg.com/originals/63/e6/51/63e65115d74b24f1ac538601fa9c739c.gif" alt=" " style="width: 100%; height: 15rem;">
+<div class="container">
+    <div *ngFor="let item of items" class="item-container">
+        <div class="item-image-placeholder-div"><img class="item-image" src="{{item.imageURL}}" alt="link: {{item.imageURL}}"></div>
+        <div class="item-text-div">
+            <div class="item-name">{{item.name}}</div>
+            <div class="item-bottom">
+                <button class="add-to-cart" (click)="addToCart(item)">Add to Cart</button>
+                <span class="item-price">{{item.price}}</span>
+            </div>
+        </div>
+    </div>
+</div>

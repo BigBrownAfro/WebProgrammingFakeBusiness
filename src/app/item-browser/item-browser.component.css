@@ -1,0 +1,38 @@
+.container{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item-container{
+    width: 15rem;
+    margin: 1rem;
+}
+
+.item-name{
+    margin-top: 1rem;
+}
+
+.item-bottom{
+    font-size: large;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.item-price{
+    margin-left: auto;
+}
+
+.add-to-cart{
+    margin-right: auto;
+    float: left;
+    background-color: rgb(255, 245, 255);
+    border-radius: 1rem;
+}
+
+.item-image{
+    width: 15rem;
+    height: 15rem;
+}

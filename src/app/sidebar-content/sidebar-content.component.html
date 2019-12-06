@@ -4,19 +4,15 @@
         <ul class="side-list">
             <li>
                 <div style="text-align-last: right; float: right; font-size: 1rem; width: .1rem; background-color: rgb(51, 22, 51); height: 1.6rem;"></div>
-                <div style="width: auto; overflow: hidden;">List Item</div>
+                <div style="width: auto; overflow: hidden;" routerLink="/cart-view" (click)="_toggleSidebar()">Cart</div>
             </li>
             <li>
                 <div style="text-align-last: right; float: right; font-size: 1rem; width: .1rem; background-color: rgb(51, 22, 51); height: 1.6rem;"></div>
-                <div style="width: auto; overflow: hidden;">List Item</div>
+                <div style="width: auto; overflow: hidden;" routerLink="/item-browser" (click)="_toggleSidebar()">Complete Catalog</div>
             </li>
             <li>
                 <div style="text-align-last: right; float: right; font-size: 1rem; width: .1rem; background-color: rgb(51, 22, 51); height: 1.6rem;"></div>
-                <div style="width: auto; overflow: hidden;">List Item</div>
-            </li>
-            <li>
-                <div style="text-align-last: right; float: right; font-size: 1rem; width: .1rem; background-color: rgb(51, 22, 51); height: 1.6rem;"></div>
-                <div style="width: auto; overflow: hidden;">List Item</div>
+                <div style="width: auto; overflow: hidden;" routerLink="/technologies-used" (click)="_toggleSidebar()">Technologies Used</div>
             </li>
         </ul>
     </div>

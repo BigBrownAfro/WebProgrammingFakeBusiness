@@ -1,0 +1,13 @@
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+li{
+    margin-top: 1rem;
+    font-size: x-large;
+}
+
+.smaller{
+    font-size: large;
+}

@@ -1,14 +1,19 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HeroesComponent } from './heroes/heroes.component';
+import { ItemBrowserComponent } from './item-browser/item-browser.component';
+import { CartViewComponent } from './cart-view/cart-view.component';
+import { TechnologiesUsedComponent } from './technologies-used/technologies-used.component';
 
 
 const routes: Routes = [
-  {path:'heroes', component: HeroesComponent}
+  {path:'', component: ItemBrowserComponent},
+  {path:'item-browser', component: ItemBrowserComponent},
+  {path:'cart-view', component: CartViewComponent},
+  {path:'technologies-used', component: TechnologiesUsedComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

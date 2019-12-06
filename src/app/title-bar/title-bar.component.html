@@ -6,10 +6,10 @@
                 <div class="title">{{title}}</div>
                 <div class="search-bar">
                     <div (click)="onClickLeftSearch(searchInput)" id="left-search"></div>
-                    <input class="search-input" #searchInput>
-                    <button class="search-button"><img id="search-icon" src="assets/search-icon.jpg" alt="&#9740;"></button>
+                    <input id="input" class="search-input" #searchInput>
+                    <button id="button" (click)="onClickSearch(searchInput)" class="search-button"><img id="search-icon" src="assets/search-icon.jpg" alt="&#9740;"></button>
                 </div>
-                <div class="cart-div" (click)="_goToCart()">
+                <div class="cart-div" routerLink="/cart-view">
                     <div class="cart-number">{{cart.size}}</div>
                     <input class="cart-button" type="Image" value="cart" src="assets\cart.png">
                 </div>

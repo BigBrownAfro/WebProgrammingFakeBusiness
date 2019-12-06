@@ -1,5 +1,4 @@
-import { Component, ViewChildren } from '@angular/core';
-import { Cart } from './cart';
+import { Component } from '@angular/core';
 import { ITEMS } from './mock-items';
 
 @Component({
@@ -10,14 +9,9 @@ import { ITEMS } from './mock-items';
 export class AppComponent {
   items = ITEMS;
   private _opened:boolean;
-  cart:Cart;
 
   constructor(){
     this._opened = false;
-    this.cart = new Cart();
-    for (var item of this.items){
-      this.cart.add(item);
-    }
   }
 
   private _toggleSidebar(){
@@ -29,10 +23,5 @@ export class AppComponent {
     }else{
       pageContent.style.filter = "brightness(1)";
     }
-  }
-
-  private _goToCart(){
-    console.log("Going to cart page.");
-    
   }
 }

@@ -1,8 +1,8 @@
 <h1>Shopping Cart:</h1>
 <div class="list-container">
     <ul class="cart-item-list">
-        <li *ngFor="let item of cart.items" (click)="onSelect(item)">
-            <div class="item-image-placeholder-div"></div>
+        <li *ngFor="let item of cart.items">
+            <div class="item-image-placeholder-div"><img class="item-image" src="{{item.imageURL}}" alt="Broken imgURL"></div>
             <div class="item-text-div">
                 <div class="item-name">{{item.name}}</div>
                 <div class="item-price">{{item.price}}</div>
